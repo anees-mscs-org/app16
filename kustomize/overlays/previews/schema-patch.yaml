@@ -1,0 +1,13 @@
+apiVersion: databases.schemahero.io/v1alpha4
+kind: Database
+metadata:
+  name: app16
+spec:
+  connection:
+    postgres:
+      host:
+        value: app16-postgresql
+      password: 
+        valueFrom:
+          secretKeyRef:
+            name: app16-postgresql
