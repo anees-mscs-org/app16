@@ -1,0 +1,13 @@
+apiVersion: devopstoolkitseries.com/v1alpha1
+kind: AppClaim
+metadata:
+  name: app16
+spec:
+  id: app16
+  parameters:
+    namespace: production
+    image: docker.io/syedanees85/app16:0.0.0
+    host: app16.54.211.11.133.nip.io
+  compositionSelector:
+    matchLabels:
+      type: backend-db-local
